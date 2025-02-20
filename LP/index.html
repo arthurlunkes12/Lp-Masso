@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Massoterapia - Cuidando do seu bem-estar</title>
+    <link rel="stylesheet" href="css/toppom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/beneficios.css" />
+    <link rel="stylesheet" href="css/localização.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo2.png" alt="Logo">
+        </div>
+        
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Ícone do menu -->
+        
+        <ul class="nav-links">
+            <li><a href="#Inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#sobre" class="nav-link">O que é?</a></li>
+            <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+            <li><a href="#localizacao" class="nav-link">Estamos aqui!</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+    
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        
+      </ul>
+    </nav>
+
+    <section id="Inicio" class="hero">
+      <div class="hero-content">
+        <h2>
+          <img src="images/logo2.png" alt="logo" />
+        </h2>
+        <h1>Sinta o <span>alívio</span> que seu <span>corpo</span> merece!</h1>
+        <p>
+          Experimente a massoterapia e recupere seu bem-estar de forma natural.
+        </p>
+
+        <a
+          class="whatsapp-button"
+          href="https://api.whatsapp.com/send?phone=5511979500980&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20massagem%20!%20"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i> AGENDAR UMA CONSULTA AGORA
+        </a>
+
+        <p class="location">
+          Estamos em São Paulo
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          (209) avaliações
+        </p>
+      </div>
+      <img src="images/masso1.jpg" alt="Massoterapia" class="hero-image" />
+    </section>
+    <section id="sobre" class="massoterapia fade-in">
+      <div class="container">
+        <div class="content">
+          <div class="text fade-in">
+            <h2>O que é <span>MASSOTERAPIA?</span></h2>
+            <p>
+              A massoterapia é uma prática terapêutica que utiliza diferentes
+              técnicas de massagem para promover o bem-estar físico e mental.
+              Por meio de toques precisos, essa abordagem auxilia no relaxamento
+              muscular, alívio da dor e melhora da circulação sanguínea,
+              trazendo benefícios tanto para o corpo quanto para a mente.<br />
+              A técnica é baseada na aplicação de movimentos manuais sobre os
+              tecidos do corpo, estimulando a circulação, reduzindo tensões
+              musculares e promovendo um profundo relaxamento. <br />
+              Além disso, a massoterapia é amplamente utilizada como um
+              complemento em tratamentos de dores crônicas, ansiedade e
+              estresse.
+            </p>
+          </div>
+          <div class="image fade-in">
+            <img src="images/masso2.jpg" alt="Massoterapia" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="beneficios" class="benefits-section fade-in">
+      <div class="container">
+        <h2>Benefícios da <span>Massoterapia</span></h2>
+        <div class="benefits-grid">
+          <div class="benefit-box fade-in" onclick="openBenefit(0)">
+            <i class="fas fa-hand-holding-medical"></i>
+            <h3>Alívio do Estresse</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(1)">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Melhora da Circulação</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(2)">
+            <i class="fas fa-spa"></i>
+            <h3>Relaxamento Profundo</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(3)">
+            <i class="fas fa-user-md"></i>
+            <h3>Redução de Dores</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(4)">
+            <i class="fas fa-running"></i>
+            <h3>Aumento da Flexibilidade</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(5)">
+            <i class="fas fa-bed"></i>
+            <h3>Melhora do Sono</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(6)">
+            <i class="fas fa-brain"></i>
+            <h3>Alívio da Ansiedade</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(7)">
+            <i class="fas fa-shield-virus"></i>
+            <h3>Fortalece o Sistema Imunológico</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(8)">
+            <i class="fas fa-smile"></i>
+            <h3>Melhora o Humor</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(9)">
+            <i class="fas fa-user-check"></i>
+            <!-- Ícone para postura corrigida -->
+            <h3>Corrige a Postura</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(10)">
+            <i class="fas fa-leaf"></i>
+            <h3>Elimina Toxinas</h3>
+            <p>Clique para saber mais</p>
+          </div>
+          <div class="benefit-box fade-in" onclick="openBenefit(11)">
+            <i class="fas fa-bolt"></i>
+            <h3>Aumenta a Energia</h3>
+            <p>Clique para saber mais</p>
+          </div>
+        </div>
+      </div>
+      <div class="whatsapp-container">
+        <a
+          class="whatsapp-button"
+          href="https://api.whatsapp.com/send?phone=5511979500980&text=Ol%C3%A1,%20quero%20agendar%20uma%20consulta%20de%20massoterapia!"
+          target="_blank"
+        >
+          <i class="fab fa-whatsapp"></i> Agendar Consulta
+        </a>
+      </div>
+
+      <!-- Modal para exibir mais detalhes -->
+      <div id="benefitModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeBenefit()">&times;</span>
+          <h3 id="benefitTitle"></h3>
+          <p id="benefitDescription"></p>
+        </div>
+      </div>
+    </section>
+    <section id="localizacao" class="info-section">
+      <div class="info-content">
+        <!-- Lado esquerdo: Imagem com fade -->
+        <div class="info-left fade-in">
+          <div class="text-overlay">
+            <h2>Quem pode se <span>beneficiar</span> da Massoterapia?</h2>
+            <p>
+              A massoterapia é indicada para qualquer pessoa que deseja melhorar
+              a saúde e o bem-estar. Se você sofre com dores musculares,
+              estresse, ansiedade ou simplesmente quer relaxar, a massoterapia é
+              para você.
+            </p>
+          </div>
+
+          <div class="benefits-cards">
+            <div class="card">
+              <i class="fas fa-child"></i>
+              <h3>Crianças</h3>
+              <p>Ajuda no relaxamento e alívio de tensões.</p>
+            </div>
+
+            <div class="card">
+              <i class="fas fa-user-graduate"></i>
+              <h3>Adolescentes</h3>
+              <p>Reduz o estresse e melhora a postura.</p>
+            </div>
+
+            <div class="card">
+              <i class="fas fa-user"></i>
+              <h3>Adultos</h3>
+              <p>Alívio de dores musculares e relaxamento.</p>
+            </div>
+
+            <div class="card">
+              <i class="fas fa-user-nurse"></i>
+              <h3>Idosos</h3>
+              <p>Melhora a circulação e reduz dores crônicas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado direito: Localização e horário -->
+        <div class="info-right fade-in">
+          <div class="clinic-info fade-in">
+            <h3>📍 Localização</h3>
+            <p>
+              Av. Maria Luiza Americano, 611 - Itaquera, São Paulo - SP,
+              08275-001
+            </p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8537208930065!2d-46.48419522437336!3d-23.573696578791353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce676a9d64d6b9%3A0xd355cd6910dbdc7f!2sEspa%C3%A7o%20da%20Quiropraxia%20Itaquera%20-%20Sa%C3%BAde%20da%20Coluna%20e%20Articula%C3%A7%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1740093188002!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <br />
+            <br />
+
+            <h3>🕒 Horário de Funcionamento</h3>
+            <p>Seg - Sex: 08h - 20h</p>
+            <p>Sábados: 08h - 17h</p>
+
+            <div class="whatsapp-container">
+              <a
+                class="whatsapp-button"
+                href="https://api.whatsapp.com/send?phone=5511979500980&text=Ol%C3%A1,%20quero%20agendar%20uma%20consulta%20de%20massoterapia!"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i> Agendar Consulta
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/oqe.js"></script>
+    <script src="js/beneficios.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

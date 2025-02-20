@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #e6f7e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Centralizando os itens da navbar */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Ajusta o espaçamento entre os itens */
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Links do menu */
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    padding-bottom: 5px; /* Espaço para o sublinhado */
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3d5245;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Ícone do menu hambúrguer */
+.menu-toggle {
+    display: none; /* Somente em telas pequenas */
+    font-size: 2em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o menu hambúrguer */
+    }
+
+    .nav-links {
+        display: none; /* Oculta o menu inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex; /* Exibe o menu quando o botão for pressionado */
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2em;
+    }
+
+    /* Ajuste para evitar que a navbar tampe a .hero */
+    .hero {
+        padding-top: 80px; /* Dá um espaço para compensar a navbar */
+    }
+}

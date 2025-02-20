@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho dos elementos */
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+.hero {
+    background-color: #e6f7e6; /* Verde bem clarinho */
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 10%; /* Aumentei o espaçamento */
+}
+
+/* Conteúdo da hero */
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px; /* Adicionado mais espaço abaixo do título */
+}
+
+.hero-content img {
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-weight: bold;
+    margin-bottom: 30px; /* Mais espaçamento abaixo */
+}
+
+h1 span {
+    color: #23d34e; /* Verde para dar destaque */
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 40px; /* Ajuste para mais espaçamento */
+}
+
+/* Botão WhatsApp */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #23d34e;
+    color: white;
+    padding: 18px 25px; /* Aumentei o padding para deixar maior */
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px #23d34e;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px; /* Espaçamento maior acima do botão */
+}
+
+.whatsapp-button i {
+    font-size: 1.7em;
+    margin-right: 12px;
+}
+
+.whatsapp-button:hover {
+    box-shadow: 0 0 25px #23d34e;
+    transform: scale(1.08);
+}
+
+/* Localização e avaliações */
+.location {
+    margin-top: 10px; /* Aumentei o espaçamento */
+    font-size: 1.1em;
+}
+
+.stars i {
+    color: gold;
+    font-size: 1em;
+}
+
+/* Imagem na hero */
+.hero-image {
+    width: 50%;
+    border-radius: 30px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+/* Responsividade da Seção Hero */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 10%;
+        height: auto;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-image {
+        width: 80%;
+        max-width: 450px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 8%;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .whatsapp-button {
+        font-size: 1.1em;
+        padding: 14px 20px;
+    }
+
+    .hero-image {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 6%;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .whatsapp-button {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+}
