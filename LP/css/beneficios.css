@@ -159,51 +159,68 @@
 /* Responsividade */
 @media (max-width: 1200px) {
     .benefits-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 por linha em telas grandes */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 1024px) {
     .benefits-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 por linha em telas médias */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .benefits-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
-        gap: 10px; /* Reduz espaço entre os cards */
-    }
-}
-
-@media (max-width: 600px) {
-    .benefits-grid {
-        grid-template-columns: repeat(2, 1fr); /* Mantém 2 por linha em celulares maiores */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     .benefit-box {
-        padding: 12px; /* Reduz tamanho dos cards */
-    }
-
-    .benefit-box i {
-        font-size: 25px; /* Reduz tamanho do ícone */
-    }
-}
-
-@media (max-width: 480px) {
-    .benefits-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 por linha em celulares pequenos */
-    }
-
-    .benefit-box {
-        padding: 10px;
+        padding: 14px;
     }
 
     .benefit-box h3 {
         font-size: 1em;
     }
 
+    .benefit-box p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-box {
+        padding: 10px;
+    }
+
+    .benefit-box i {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .benefit-box {
+        padding: 12px;
+    }
+
     .benefit-box i {
         font-size: 22px;
     }
+
+    .benefit-box h3 {
+        font-size: 0.9em;
+    }
+}
+
+/* Ajuste no hover para evitar escalonamento excessivo */
+.benefit-box:hover {
+    transform: scale(1.05);
 }

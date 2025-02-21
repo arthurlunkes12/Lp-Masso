@@ -1,0 +1,65 @@
+.duvida {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.duvida h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.duvida p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+.footer {
+    background-color: #111; /* Cor de fundo escura */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 1px 1px; /* Reduzindo o espaçamento */
+    font-size: 12px; /* Diminuindo um pouco o tamanho da fonte */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #ccc; /* Cor dos links */
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer a:hover {
+    color: #fff; /* Destaque ao passar o mouse */
+}

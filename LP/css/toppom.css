@@ -24,7 +24,9 @@ body {
 .hero-content {
     max-width: 550px;
 }
-
+.hero li {
+    font-size: 20px; /* Aumenta o tamanho do texto */
+}
 .hero-content h2 {
     margin-bottom: 20px; /* Adicionado mais espaço abaixo do título */
 }
@@ -35,7 +37,10 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
+.hero-content p{
+    font-size: 18px;
 
+}
 h1 {
     font-size: 3.2em;
     font-weight: bold;

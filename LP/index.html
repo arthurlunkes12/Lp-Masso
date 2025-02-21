@@ -9,10 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/sobre.css" />
     <link rel="stylesheet" href="css/beneficios.css" />
     <link rel="stylesheet" href="css/localização.css" />
+    <link rel="stylesheet" href="css/contatos.css" />
+    <link rel="stylesheet" href="css/duvida.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -27,7 +31,8 @@
             <li><a href="#sobre" class="nav-link">O que é?</a></li>
             <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
             <li><a href="#localizacao" class="nav-link">Estamos aqui!</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
+            <li><a href="#Duvidas" class="nav-link">Duvidas</a></li>
+            <li><a href="#Fale conosco" class="nav-link">Fale conosco</a></li>
         </ul>
     </nav>
     
@@ -46,6 +51,12 @@
         <h1>Sinta o <span>alívio</span> que seu <span>corpo</span> merece!</h1>
         <p>
           Experimente a massoterapia e recupere seu bem-estar de forma natural.
+        </p>
+
+        <h2>Tecnicas Utilizadas</h2>
+        <p>
+          <li>Liberação miofacial</li>
+          <li>Massagem quirozen - primeira fatia</li>
         </p>
 
         <a
@@ -67,6 +78,7 @@
           </span>
           (209) avaliações
         </p>
+        <br>
       </div>
       <img src="images/masso1.jpg" alt="Massoterapia" class="hero-image" />
     </section>
@@ -89,11 +101,30 @@
               estresse.
             </p>
           </div>
+          
+          <!-- Carrossel de Imagens -->
           <div class="image fade-in">
-            <img src="images/masso2.jpg" alt="Massoterapia" />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/masso1.jpg" alt="Massagem Terapêutica">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/ventosa.jpg" alt="Técnicas de Massagem">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/graston1.jpg" alt="Relaxamento e Bem-estar">
+                </div>
+              </div>
+              <!-- Botões de navegação -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
+    
         </div>
       </div>
+    </section>
+    
     </section>
     <section id="beneficios" class="benefits-section fade-in">
       <div class="container">
@@ -148,11 +179,6 @@
             <i class="fas fa-user-check"></i>
             <!-- Ícone para postura corrigida -->
             <h3>Corrige a Postura</h3>
-            <p>Clique para saber mais</p>
-          </div>
-          <div class="benefit-box fade-in" onclick="openBenefit(10)">
-            <i class="fas fa-leaf"></i>
-            <h3>Elimina Toxinas</h3>
             <p>Clique para saber mais</p>
           </div>
           <div class="benefit-box fade-in" onclick="openBenefit(11)">
@@ -258,6 +284,83 @@
         </div>
       </div>
     </section>
+
+    <section id="Duvidas" class="faq-section fade-in">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-container fade-in">
+          <div class="faq-column fade-in">
+              <div class="faq-item">
+                  <button class="faq-question">O que é Anamnese? <span class="icon">+</span></button>
+                  <div class="faq-answer">A sessão começa com uma breve entrevista onde o terapeuta avalia as queixas, dores, histórico médico e expectativas do cliente.</div>
+              </div>
+              <div class="faq-item">
+                  <button class="faq-question">Como devo me preparar? <span class="icon">+</span></button>
+                  <div class="faq-answer">O cliente deita-se em uma maca, geralmente com uma toalha ou lençol cobrindo o corpo, deixando apenas a área a ser trabalhada exposta.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Tenho dores localizadas, devo informar o terapeuta? <span class="icon">+</span></button>
+                <div class="faq-answer">Áreas com tensão muscular, dores ou desconforto são trabalhadas com mais intensidade e atenção para aliviar os sintomas.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Não tenho nenhuma dor, mas gosto de fazer Massagem Relaxante, posso fazer mesmo assim? <span class="icon">+</span></button>
+                <div class="faq-answer">Além de tratar áreas específicas, a massagem promove um relaxamento geral, ajudando a reduzir o estresse e a ansiedade.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Terei um feedback ou recomendações da minha sessão? <span class="icon">+</span></button>
+                <div class="faq-answer">Após a sessão, o terapeuta oferece feedback sobre as áreas de tensão encontradas e pode recomendar exercícios, alongamentos ou outras terapias complementares para manutenção dos resultados.</div>
+              </div>
+          </div>
+           
+
+  
+          <div class="faq-column fade-in">
+              <div class="faq-item">
+                  <button class="faq-question">Quais são as técnicas aplicadas? <span class="icon">+</span></button>
+                  <div class="faq-answer">O terapeuta aplica uma combinação de técnicas de massagem, como deslizamentos, amassamentos, fricções, percussões e alongamentos, conforme a necessidade do cliente.</div>
+              </div>
+              <div class="faq-item">
+                  <button class="faq-question">Aceita convênio? <span class="icon">+</span></button>
+                  <div class="faq-answer">Atualmente, trabalhamos apenas com atendimentos particulares...</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">Quais são os horários de atendimento <span class="icon">+</span></button>
+                <div class="faq-answer">
+                  Segunda a sexta: das 8h às 20h
+                  Sábados: das 8h às 17h
+                  Domingos e Feriados (fechado)
+                </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Quantas sessões devo fazer? <span class="icon">+</span></button>
+              <div class="faq-answer">A quantidade de sessões recomendadas será sugerida pelo terapeuta de acordo com o quadro de cada paciente.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">Gestantes e crianças podem fazer? <span class="icon">+</span></button>
+              <div class="faq-answer">Não há contraindicações, na verdade é muito bem recomendado. No caso das grávidas, durante a gestação o corpo da mulher passa por inúmeras transformações, tanto hormonais quanto corporais, e ter um cuidado nessa fase é muito importante.
+                A massagem em crianças contribui no desenvolvimento e crescimento.</div>
+            </div>
+      </div>
+  </section>
+  <section id="Fale conosco" class="duvida">
+    <div class="container">
+        <h2>Ficou com alguma dúvida?</h2>
+        <p>Entre em contato conosco pelo WhatsApp para esclarecer suas dúvidas!</p>
+        <a
+          class="whatsapp-button"
+          href="https://api.whatsapp.com/send?phone=5511979500980&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20massagem%20!%20"
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Mande mensagem ja!
+        </a>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <p>Todos os direitos reservados - Espaço da Quiropraxia</p>
+        <p>Feito por <a href="https://www.linkedin.com/in/arthur-lunkes-927528227/" target="_blank">@art.Lunkes</a></p>
+    </div>
+  </footer>
 
     <script src="js/oqe.js"></script>
     <script src="js/beneficios.js"></script>
