@@ -69,21 +69,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".mySwiper", {
-      loop: true, // Loop infinito
-      spaceBetween: 20,
-      slidesPerView: 1, // Mostra uma imagem por vez
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000, // Troca de imagem a cada 3 segundos
-        disableOnInteraction: false,
-      },
+    // Carrossel de Imagens
+    new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
     });
-  });
+
+    // Carrossel de Texto com Paginação
+    new Swiper(".text-carousel", {
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+        effect: "fade",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+});

@@ -2,8 +2,8 @@
     background-color: #fff;
     padding: 40px 10%;
     display: flex;
-    flex-direction: column; /* Garante que tudo fique empilhado */
-    align-items: left; /* Centraliza a seção */
+    flex-direction: column;
+    align-items: left;
 }
 
 .massoterapia .container {
@@ -13,25 +13,42 @@
 
 .massoterapia .content {
     display: flex;
-    align-items: flex-start; /* Mantém os itens alinhados no topo */
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
 }
 
-.massoterapia .text {
-    max-width: 50%;
-    flex: 1;
+/* Estilos para o Carrossel de Texto */
+.text-carousel {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
 }
-.massoterapia .text h2 {
+
+.text-carousel .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 100%;
+}
+
+.text-content h2 {
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.massoterapia .text h2 span {
+
+.text-content h2 span {
     color: #23d34e;
 }
-.massoterapia .text p {
+
+.text-content p {
     font-size: 20px;
 }
+
+/* Estilos para o Carrossel de Imagens */
 .massoterapia .image {
     max-width: 50%;
     flex: 1;
@@ -48,19 +65,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.swiper-slide-active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Garante que a imagem não ultrapasse os limites do slide */
 .swiper-slide img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* Mantém a proporção sem distorcer */
+    object-fit: cover;
     border-radius: 10px;
 }
-
-/* Ajustando os botões de navegação */
-
-
 
 /* Estado inicial: invisível e deslocado para baixo */
 .fade-in {
@@ -74,7 +94,8 @@
     opacity: 1;
     transform: translateY(0);
 }
-/* Responsividade da Seção Massoterapia */
+
+/* Responsividade */
 @media (max-width: 1024px) {
     .massoterapia .content {
         flex-direction: column;
@@ -82,8 +103,8 @@
         text-align: center;
     }
 
-    .massoterapia .text {
-        max-width: 90%;
+    .text-carousel {
+        width: 90%;
     }
 
     .massoterapia .image {
@@ -102,11 +123,11 @@
         padding: 40px 5%;
     }
 
-    .massoterapia .text h2 {
+    .text-content h2 {
         font-size: 36px;
     }
 
-    .massoterapia .text p {
+    .text-content p {
         font-size: 18px;
     }
 
@@ -120,11 +141,11 @@
         padding: 30px 5%;
     }
 
-    .massoterapia .text h2 {
+    .text-content h2 {
         font-size: 30px;
     }
 
-    .massoterapia .text p {
+    .text-content p {
         font-size: 16px;
     }
 
